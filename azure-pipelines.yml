@@ -25,8 +25,8 @@ jobs:
       testResultsFiles: '**/*.trx' 
 
 - job: Windows
-  pool:'MyPoolDevops'
-    vmImage: 'windows-2019'
+  pool:MyPoolDevops
+    vmImage:'windows-2019'
   steps:
   - task: DotNetCoreInstaller@0
     inputs:
